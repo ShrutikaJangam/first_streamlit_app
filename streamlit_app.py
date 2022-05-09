@@ -70,7 +70,7 @@ except URLError as e:
 #import snowflake.connector
 # dont run anything past here while we troubleshott
 
-streamlit.stop()
+#streamlit.stop()
 #my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 #my_cur = my_cnx.cursor()
 #my_cur.execute("SELECT * FROM fruit_load_list")
@@ -78,7 +78,7 @@ streamlit.stop()
 #streamlit.header("The fruit load list contains")
 #streamlit.dataframe(my_data_rows)
 
-
+#Snowflake related functions:
 streamlit.header("The fruit load list contains:")
 def get_fruit_load_list():
     with my_cnx.cursor() as my_cur:
