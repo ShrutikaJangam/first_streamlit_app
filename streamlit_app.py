@@ -28,4 +28,6 @@ fruityvice_response= requests.get("https://fruityvice.com/api/fruit/" + fruit_ch
 # take json version of response and normalize it
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 
+import snowflake.connector
+
 
